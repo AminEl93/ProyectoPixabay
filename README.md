@@ -6,12 +6,6 @@ Este proyecto consiste en un buscador de imágenes de portada creado con Angular
 
 Ejecutar el comando `npm run start` o `ng serve` y acceder a la URL `http://localhost:4200/`. La aplicación se recargará automáticamente si cambias alguno de los archivos fuente.
 
-Para mantener abierta la base de datos de los artículos, hay que seguir estos pasos:
-- Ejecutar el archivo `mongod.exe` en la carpeta `C:\Program Files\MongoDB\Server\6.0\bin`.
-- Abrir la consola, acceder a la carpeta dónde tengamos el backend (`...\Projects\Blog-Articulos\Backend`)
-  y ejecutar el comando `npm start`.
-- Tener abierto el Postman para consultar las diferentes URLs a las cuáles acceder.
-
 ## Scaffolding de código
 
 Ejecutar el comando `ng generate component component-name` para generar un nuevo componente. También puedes usar el comando `ng generate directive|pipe|service|class|guard|interface|enum|module`.
