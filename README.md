@@ -1,6 +1,6 @@
 # Proyecto Pixabay
 
-Este proyecto consiste en un buscador de imágenes de portada creado con Angular. Se ha generado con la versión 16.0.0 de [Angular CLI](https://github.com/angular/angular-cli), con la versión 18.16.0 de NodeJS y con la versión 9.6.6 de npm.
+Este proyecto consiste en un buscador de imágenes para la portada de una página web creado con Angular. Se ha generado con la versión 16.0.0 de [Angular CLI](https://github.com/angular/angular-cli), con la versión 18.16.0 de NodeJS y con la versión 9.6.6 de npm.
 
 ## Iniciar aplicación y servidor de desarrollo
 
