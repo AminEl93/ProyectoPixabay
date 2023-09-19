@@ -1,0 +1,73 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana;
+    -webkit-font-smoothing: antialised;
+    -moz-font-smoothing: antialised;
+    -moz-osx-font-smoothing: antialised;
+}
+
+.spacer {
+    flex: 1;
+}
+
+.toolbar {    
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #B4A252;
+    color: white;
+    font-weight: 600;
+}
+
+.toolbar img {
+    margin: 0 16px;
+} 
+
+.content {
+    display: flex;
+}
+
+.clearfix {
+    clear: both;
+    float: none;
+}
+
+.btn {
+    background-color: #B4A252;
+    color: white;
+    font-size: 14px;
+    padding: 14px 50px;
+}
+
+.btn:hover {
+    color: white;
+    text-decoration: none;
+    background-color: #8F7C28;
+}
+
+.btn-guardar-cambios {
+    margin-top: 75px;
+}
+
+.btn-subir-portada, .btn-buscar-portada {
+    display: flex;
+    align-items: center;
+    gap: 23px;
+}
+
+.btn-buscar-portada {
+    padding: 14px 50px;
+}
+
+.btn-subir-portada {
+    padding-left: 15px;
+}
+
+input[type="text"], input[type="file"], textarea {
+    width: 44%;
+    border: 2px solid #CCC;
+}
