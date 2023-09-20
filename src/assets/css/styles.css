@@ -7,25 +7,22 @@ body {
     -moz-osx-font-smoothing: antialised;
 }
 
-.spacer {
-    flex: 1;
-}
-
-.toolbar {    
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 60px;
+.toolbar {
     display: flex;
     align-items: center;
+    height: 60px;
     background-color: #B4A252;
     color: white;
     font-weight: 600;
-}
+
+    .spacer {
+        flex: 1;
+    }    
+} 
 
 .toolbar img {
     margin: 0 16px;
-} 
+}
 
 .content {
     display: flex;
@@ -36,17 +33,18 @@ body {
     float: none;
 }
 
+/* Botones */
 .btn {
     background-color: #B4A252;
     color: white;
     font-size: 14px;
     padding: 14px 50px;
-}
 
-.btn:hover {
-    color: white;
-    text-decoration: none;
-    background-color: #8F7C28;
+    &:hover {
+        background-color: #8F7C28;
+        color: white;
+        text-decoration: none;
+    }
 }
 
 .btn-guardar-cambios {
@@ -67,6 +65,7 @@ body {
     padding-left: 15px;
 }
 
+/* Input del buscador */
 input[type="text"], input[type="file"], textarea {
     width: 44%;
     border: 2px solid #CCC;

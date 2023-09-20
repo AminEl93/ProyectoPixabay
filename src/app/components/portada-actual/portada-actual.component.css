@@ -1,5 +1,6 @@
+/* PORTADA ACTUAL */
 .container-portada-actual {
-    width: 607px;
+    width: auto;
     height: 520px;
     background-color: #e5e2e2;
     padding-top: 18px;
@@ -20,6 +21,7 @@
     }
 }
 
+/* CAMBIAR LA PORTADA */
 .container-cambiar-portada {
     margin-top: 50px;
     font-size: 14px;
@@ -33,20 +35,26 @@
         text-wrap: nowrap;
     }
 
+    /* Buscador de portadas */
     .search-input {
         margin-bottom: 17px;
         padding-bottom: 27px;
         border-bottom: 2px solid #CCC;
     }
 
-    .portadas-container {
+    /* Lista de las portadas */
+    .container-portadas {
+        margin-right: 20px;
+    }
+
+    .container-portada {
         display: inline-grid;
-        grid-template-columns: 190px 0px 27px;
+        grid-template-columns: 215px 0px 20px;
 
         .portada-item {
             width: 100%;
-            padding-top: 20px;
-            padding-bottom: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
         }
     }
 

@@ -14,7 +14,7 @@ export class PortadaActualComponent implements OnInit{
     public searchString!: string;
     public portadasEncontradas: boolean = false;
     public loading: boolean = false;
-
+    
     constructor(private _portadaService: PortadaService) { }
 
     ngOnInit() { }

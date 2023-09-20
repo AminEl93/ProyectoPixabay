@@ -1,4 +1,6 @@
 <div class="content">
+    
+    <!-- PORTADA ACTUAL -->
     <div class="container-portada-actual">
         <h5 class="portada-title">Portada actual</h5>
         <div>
@@ -8,6 +10,7 @@
         <div class="clearfix"></div>
     </div>
 
+    <!-- CAMBIAR LA PORTADA -->
     <div class="container-cambiar-portada">
         <h5>Cambiar portada</h5>
         <p>Puede subir una imagen nueva de portada</p>
@@ -25,23 +28,31 @@
             O también puede elegir una imagen de portada buscando una temática en nuestro archivo de imágenes:
         </p>
 
+        <!-- Buscador de portadas -->
         <div class="search-input">
-            <form class="d-flex gap-3" #searchForm="ngForm">
-                <input type="text" name="search" #search="ngModel" [(ngModel)]="searchString"/>
-                <button (click)="obtenerPortadas(searchString)" type="button" class="btn btn-buscar-portada">Buscar</button>
+            <form #searchForm="ngForm">
+                <div class="d-flex gap-3" >
+                    <input type="text" name="search" #search="ngModel" [(ngModel)]="searchString" required/>
+                    <button (click)="obtenerPortadas(searchString)" type="button"
+                            class="btn btn-buscar-portada">Buscar
+                    </button>
+                </div>               
+                <small class="text-danger" [class.d-none]="search.valid || search.untouched">
+                    No hay ningún texto de búsqueda                    
+                </small>
             </form>
         </div>
 
         <p>Resultados de su búsqueda:</p>
         
-        <div *ngIf="loading">Cargando las portadas...</div>
-        
+        <div *ngIf="loading">Cargando las portadas...</div>        
         <div class="sin-resultados" *ngIf="portadas != undefined && portadas.length === 0">
             No hay resultados de su búsqueda!
         </div>        
 
-        <div *ngIf="portadas">
-            <div class="portadas-container" *ngFor="let portada of portadas">
+        <!-- Lista de las portadas encontradas -->
+        <div class="container-portadas" *ngIf="portadas">
+            <div class="container-portada" *ngFor="let portada of portadas">
                 <a href="{{portada.pageURL}}">        
                     <img class="portada-item image-wrap" src="{{portada.webformatURL}}"/>
                 </a>    
@@ -49,6 +60,3 @@
         </div>        
     </div>
 </div>
-
-
-
