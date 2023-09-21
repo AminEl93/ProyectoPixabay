@@ -61,3 +61,9 @@
         font-weight: bold;
     }
 }
+
+@media (max-width: 730px) {
+    .content {
+        flex-direction: column;
+    }
+}
