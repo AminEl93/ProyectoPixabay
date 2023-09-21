@@ -13,7 +13,7 @@ export class PortadaService {
         this.URL = environment.API_URL + environment.API_KEY + '&q=';
     }
 
-    // Petición AJAX al backend de Pixabay para obtener todos las portadas
+    // Petición AJAX al backend de Pixabay para obtener todas las portadas
     getPortadas(search:string): Observable<any> {
         return this._http.get(this.URL + search);
     }   
