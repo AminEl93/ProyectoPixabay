@@ -9,3 +9,5 @@ Ejecutar el comando `npm start` y acceder a la URL `http://localhost:4200/`.
 ## Obtención de la información de la API
 
 Se ha de acceder a la página de documentación de la [API de Pixabay](https://pixabay.com/api/docs). En el apartado de `Search Images`, copiar la URL añadiendo los siguientes parámetros `https://pixabay.com/api/?key=API_KEY&q=TEXTO_A_BUSCAR`. Para obtener la **API Key** se necesita registrarse.
+
+Para probar la aplicación, se puede acceder a este [enlace](https://proyecto-pixabay-amin.netlify.app/).
